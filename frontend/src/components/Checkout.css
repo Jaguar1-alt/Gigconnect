@@ -1,0 +1,90 @@
+/* Checkout.css */
+
+/* Main Container */
+.checkout-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: linear-gradient(145deg, #f5f7fa, #e4e9f0);
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.checkout-container:hover {
+  transform: translateY(-3px);
+}
+
+/* Header */
+.checkout-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.checkout-header h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+}
+
+.checkout-header p {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Details Card */
+.checkout-details {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.checkout-details p {
+  margin: 12px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.checkout-details h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #222;
+  text-align: center;
+}
+
+/* Payment Button */
+.payment-button {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(90deg, #556ee6, #34c38f);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.payment-button:hover {
+  background: linear-gradient(90deg, #34c38f, #556ee6);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Loading & Error */
+.loading,
+.error {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff4d4f;
+}

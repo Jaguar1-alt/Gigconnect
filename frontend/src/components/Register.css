@@ -1,0 +1,116 @@
+/* Updated Register.css */
+
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f7fa; /* Light background */
+  font-family: 'Poppins', sans-serif;
+  padding: 1rem;
+}
+
+.register-card {
+  background: #ffffff; /* White card */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 560px; /* Smaller card width */
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
+
+.register-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.error-msg {
+  color: #dc3545;
+  text-align: center;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem; /* smaller spacing */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.form-group input,
+.form-group select {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fdfdfd;
+  font-size: 0.95rem;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.password-group {
+  position: relative;
+}
+
+.password-group input {
+  padding-right: 2.5rem; /* space for show/hide button */
+}
+
+.show-btn {
+  position: absolute;
+  right: 1px;
+  top: 70%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.register-btn {
+  padding: 0.8rem;
+  background-color: #282a28;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+  background-color: #5b605c;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.login-link a {
+  color: #041101;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

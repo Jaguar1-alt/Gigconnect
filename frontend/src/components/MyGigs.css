@@ -1,0 +1,129 @@
+/* Page */
+.mygigs-page {
+  background: #f8f9fa;
+  min-height: 100vh;
+  padding: 50px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mygigs-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.mygigs-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #222;
+}
+
+/* List style */
+.mygigs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Card */
+.gig-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-left: 6px solid #45484c;
+}
+
+.gig-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.gig-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.3rem;
+}
+
+.gig-card p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+
+/* Status */
+.gig-status.in-progress { background: #f0ad4e; color: #fff; padding: 2px 8px; border-radius: 5px; }
+.gig-status.completed { background: #0275d8; color: #fff; padding: 2px 8px; border-radius: 5px; }
+.gig-status.paid { background: #5cb85c; color: #fff; padding: 2px 8px; border-radius: 5px; }
+
+/* Freelancer link */
+.freelancer-link {
+  color: #007bff;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+/* Buttons */
+.gig-actions,
+.proposal-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.action-btn {
+  padding: 5px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: center;
+  transition: 0.2s;
+  flex: initial;
+  min-width: 100px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Button Colors */
+.action-btn.view { background: #17a2b8; color: #fff; }
+.action-btn.proposals { background: #007bff; color: #fff; }
+.action-btn.complete { background: #28a745; color: #fff; }
+.action-btn.message { background: #6c757d; color: #fff; }
+.action-btn.payment { background: #ffc107; color: #333; }
+.action-btn.review { background: #007bff; color: #fff; }
+
+.action-btn.accept { background: #28a745; color: #fff; }
+.action-btn.reject { background: #dc3545; color: #fff; }
+
+.action-btn:hover { opacity: 0.9; }
+
+/* Proposal card */
+.proposal-card {
+  margin-top: 12px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f7f7f7;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Loading & No proposals */
+.loading-text,
+.no-proposals {
+  text-align: center;
+  margin-top: 12px;
+  font-style: italic;
+  color: #555;
+}
+
+/* Fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,46 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #fff; /* Whole site background */
+  color: #111;
+}
+
+/* ===== Root Wrapper ===== */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Links ===== */
+a {
+  font-weight: 500;
+  color: #16a34a; /* Tailwind green-600 */
+  text-decoration: none;
+}
+a:hover {
+  color: #15803d; /* Tailwind green-700 */
+}
+
+/* ===== Buttons ===== */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #16a34a; /* Tailwind green-600 */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s;
+/* Tailwind green-700 */
+}

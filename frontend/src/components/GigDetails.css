@@ -1,0 +1,146 @@
+/* frontend/src/components/GigDetails.css */
+
+/* Fullscreen Overlay Background */
+/* Fullscreen Overlay Background */
+.gig-details-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6); /* dark transparent overlay */
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;   /* centers horizontally */
+  align-items: center;       /* centers vertically */
+  z-index: 2000;
+  margin: 0;                 /* remove page layout spacing */
+  padding: 0;
+}
+
+/* The Card Container */
+.gig-details-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  width: 90%;
+  max-width: 700px;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+  animation: fadeInUp 0.3s ease-in-out;
+  position: relative;
+}
+
+
+/* Title */
+.gig-details-card h2 {
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+/* Paragraphs */
+.gig-details-card p {
+  margin: 8px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Status Badge */
+.gig-status {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.gig-status.open { background-color: #17a2b8; }
+.gig-status.in-progress { background-color: #f0ad4e; }
+.gig-status.completed { background-color: #0275d8; }
+.gig-status.paid { background-color: #28a745; }
+.gig-status.paid-out { background-color: #6f42c1; }
+
+/* Proposal Form */
+.proposal-form {
+  margin-top: 30px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.proposal-form input,
+.proposal-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  padding: 12px 24px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+/* Messaging Button */
+.message-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.message-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Already Applied Text */
+.already-applied {
+  margin-top: 20px;
+  color: green;
+  font-weight: 600;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #555;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+/* Smooth Popup Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
